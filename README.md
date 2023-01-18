@@ -23,7 +23,7 @@ $$\min_{w \in W} \bar{F}(w,\lambda_{c}) = \bar{E}(w) + \lambda_{c}  \text{   } \
 
 With the BFGS algorithm with strong Wolfe-Powell line search conditions. The second approach utilizes the inherent bi-objective form of the problem. It uses the state-of-the-art multi-objective particle swarm optimization (MOPSO) method to optimize the vectorial objective function:
 
-$$\bar{F}(w) = \left[ \bar{E}(w) \text{            } \text{            } \bar{\sigma}^2(w) \right]^T.\,$$
+$$\bar{F}(w) = \left[ \bar{E}(w) \text{            } \text{            } \bar{\sigma}^2(w) \right]^T.$$
 
 Both VCB approaches are demonstrated in function approximation tasks using RBF networks.
 
