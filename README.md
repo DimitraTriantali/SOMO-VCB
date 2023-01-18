@@ -37,10 +37,17 @@ The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTria
 
 [MIT License](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/LICENSE.txt)
 
-#### References
+#### Declaration of interests
 ---
 
-#### Licence
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+#### Acknowledgements
+---
+
+This research was supported by the project "Dioni: Computing Infrastructure for Big-Data Processing and Analysis" (MIS No. 5047222), co-funded by European Union (ERDF) and Greece through Operational Program "Competitiveness, Entrepreneurship and Innovation", NSRF 2014-2020.
+
+#### References
 ---
 
 [[1]](1) Lagari, P. L., Tsoukalas, L. H., & Lagaris, I. E. (2020). Variance Counterbalancing for Stochastic Large-scale Learning. In International Journal on Artificial Intelligence Tools (Vol. 29, Issue 05, p. 2050010). World Scientific Pub Co Pte Lt. https://doi.org/10.1142/s0218213020500104
