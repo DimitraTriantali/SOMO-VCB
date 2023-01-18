@@ -1,0 +1,26 @@
+***** Training Set ***** 
+trainingSet.size    = 24000 [Size of the complete training set] 
+trainingSet.dim     = 2 [Dimension of the training pattern-vectors] 
+
+***** RBF Network ***** 
+neuralModel.nn      = 5 [Number of neurons of the RBF network] 
+neuralModel.muRange = [-5.000000 5.000000] [Range for the mu parameter] 
+neuralModel.sRange  = [0.100000 2.000000] [Range for the sigma parameter (st.dev.)] 
+neuralModel.wRange  = [-20.000000 20.000000] [Range for the network weights] 
+
+***** VCB Algorithm ***** 
+paramVCB.nbat       = 10 [Number of mini-batches per VCB cycle] 
+paramVCB.npat       = 240 [Number of patterns used per mini-batch set] 
+paramVCB.MAXcycles  = 10 [Number of cycles of the VCB algorithm] 
+paramVCB.MAXeval    = 1000000 [Number of single-pattern evaluations of the RBF network] 
+
+***** BFGS and Problem ***** 
+paramSO.nexp        = 2 [Number of experiments] 
+paramSO.dim         = 21 [Dimension of the optimization problem] 
+paramSO.maxit       = 100 [Maximum BFGS iterations] 
+paramSO.LSmaxit     = 100 [Maximum line search iterations] 
+paramSO.Lrange      = [1.000000e-01 70] [Range of the VCB penalty coefficient lambda] 
+paramSO.eps         = 1.000000e-04 [Function value improvement tolerance (used as stopping condition)] 
+paramSO.geps        = 1.000000e-04 [Gradient norm tolerance (used as stopping condition)] 
+paramSO.C1          = 0.000100 [Armijo condition parameter] 
+paramSO.C2          = 0.100000 [Curvature condition parameter] 

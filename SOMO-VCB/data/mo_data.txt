@@ -1,0 +1,13 @@
+2           % number of objective functions
+2           % number of independent experiments 
+10          % swarm size of the MOPSO algorithm
+10          % repository size
+100         % maximum allowed number of MOPSO iterations
+20          % non-improving repository iterations to restart
+0.729       % inertia coefficient for the velocity update
+1.49        % parameter C1 for the velocity update
+1.49        % parameter C2 for the velocity update
+20          % number of MOPSO grid intervals
+0.2         % maximum velocity (% of the search range)
+0.25        % mutation parameter
+0           % Pareto set evaluation strategy 
