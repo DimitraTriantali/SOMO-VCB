@@ -1,8 +1,0 @@
-5     % number of neurons in the hidden layer
--5    % lower bound of the components of the center vector
-5     % upper bound of the components of the center vector
-0.1   % lower bound of the standard deviations
-2     % upper bound of the standard deviations 
--20   % lower bound of the neuron weights
-20    % upper bound of the neuron weights
- 
