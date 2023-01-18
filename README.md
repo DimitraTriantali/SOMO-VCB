@@ -27,7 +27,7 @@ $$\bar{F}(w) = \left[ \bar{E}(w) \text{            } \text{            } \bar{\s
 
 Both VCB approaches are demonstrated in function approximation tasks using RBF networks [[4]](#4).
 
-#### Software
+#### Software's guide
 ---
 
 The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTriantali/SOMO-VCB/tree/main/SOMO-VCB) folder. The folder contains two groups of m-files. The first group implements the single-objective approach and comprises the files with the "so" prefix. The second group implements the multi-objective strategy and contains the files with the "mo" prefix. The details of the software's files and folders are comprised in the included [README](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/SOMO-VCB/README.pdf) file. An additional file named [Example](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/Example.pdf) is provided to make it easier for the user to understand the software through an illustrative example.
