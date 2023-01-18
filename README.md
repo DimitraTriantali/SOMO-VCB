@@ -36,13 +36,3 @@ The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTria
 ---
 
 [MIT License](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/LICENSE.txt)
-
-[[1]](#1)
-
-##### References
----
-{% bibliography --cited --file SOMO-VCB/bibliography.bib  %}
-
-<a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-
