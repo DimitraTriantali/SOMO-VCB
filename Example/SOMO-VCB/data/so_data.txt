@@ -1,0 +1,9 @@
+2       % number of independent experiments 
+100     % maximum allowed number of BFGS iterations
+100     % maximum line search iterations
+0.1     % lower bound of penalty coefficient
+70      % upper bound of penalty coefficient
+1.e-4   % tolerance on objective value
+1.e-4   % tolerance on gradient norm
+1.e-4   % Armijo condition parameter
+0.1     % curvature condition parameter

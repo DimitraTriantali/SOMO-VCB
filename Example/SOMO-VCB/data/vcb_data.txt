@@ -1,0 +1,4 @@
+10          % number of mini-batches
+0.1         % percentage of patterns used per mini-batch set
+10          % maximum number of VCB cycles 
+1000000     % maximum number of function evaluations
