@@ -1,4 +1,4 @@
-> ## **SOMO-VCB: A Matlab\textsuperscript{\tiny\textregistered} software for single-objective and multi-objective optimization for variance counterbalancing in stochastic learning.**
+> ## **SOMO-VCB: A Matlab software for single-objective and multi-objective optimization for variance counterbalancing in stochastic learning.**
 - Dimitra G. Triantali (d.triantali@uoi.gr)
 - Konstantinos E. Parsopoulos (kostasp@uoi.gr)
 - Isaac E. Lagaris (lagaris@uoi.gr)
