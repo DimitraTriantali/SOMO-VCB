@@ -14,7 +14,7 @@
 
 #### Introduction
 ---
-Artificial neural networks are becoming increasingly important in engineering as they have proven helpful in various demanding applications. The VCB method was proposed as a neural network training approach employing randomly selected mini-batches to optimize the network's parameters $w \in W$, where $W$ is an appropriate domain~\citep{LagariTL20}. This method is based on the minimization of the average mean squared error $\bar{E}(w)$ of the network along with the error variance $\bar{\sigma}^2(w)$ over the mini-batches. The VCB method helps eliminate the need to reduce the size of the steps and promotes the use of efficient optimizers, making it a remedy for slow convergence in stochastic learning. 
+Artificial neural networks are becoming increasingly important in engineering as they have proven helpful in various demanding applications. The VCB method was proposed as a neural network training approach employing randomly selected mini-batches to optimize the network's parameters $w \in W$, where $W$ is an appropriate domain [[1]](#1). This method is based on the minimization of the average mean squared error $\bar{E}(w)$ of the network along with the error variance $\bar{\sigma}^2(w)$ over the mini-batches. The VCB method helps eliminate the need to reduce the size of the steps and promotes the use of efficient optimizers, making it a remedy for slow convergence in stochastic learning. 
 
 The optimization problem underlying this technique can be handled as a single-objective or multi-objective. The proposed software implements both VCB approaches in function approximation tasks using RBF networks [[2]](#2).
 
