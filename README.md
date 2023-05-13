@@ -36,7 +36,7 @@ The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTria
 #### Licence
 ---
 
-[MIT License]()
+[MIT License](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/MIT%20License.txt)
 
 #### Acknowledgements
 ---
