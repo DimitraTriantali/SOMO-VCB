@@ -22,13 +22,13 @@ In its early variants, VCB followed a single-objective (SO) optimization approac
 
 $$\min_{w \in W} \bar{F}(w,\lambda_{c}) = \bar{E}(w) + \lambda_{c}  \text{   } \bar{\sigma}^2(w),$$
 
-where $λc$ stands for the penalty coefficient that needs to be properly set. The problem was solved using the BFGS algorithm with strong Wolfe-Powell line search conditions [[3]](#3). Recently, the inherent bi-objective nature of VCB has motivated a multi-objective (MO) formulation of the problem [[5]](#5) based on the minimization of the vectorial objective function:
+where $λc$ stands for the penalty coefficient that needs to be properly set. The problem was solved using the BFGS algorithm with strong Wolfe-Powell line search conditions [[2]](#2). Recently, the inherent bi-objective nature of VCB has motivated a multi-objective (MO) formulation of the problem [[3]](#3) based on the minimization of the vectorial objective function:
 
 $$\bar{F}(w) = \left[ \bar{E}(w) \text{            } \text{            } \bar{\sigma}^2(w) \right]^T.$$
 
 whose Pareto optimal solutions can be detected through state-of-the-art metaheuristics, such as the multiobjective particle swarm optimization (MOPSO) method [[4]](#4).
 
-The proposed SOMO-VCB software implements both the single-objective and the multi-objective VCB approaches, especially designed for function approximation tasks using RBF neural networks [[2]](#2). The recently published proof-of-concept results in [[5]](#5) verify the feasibility of both approaches as well as their potential in diverse regression tasks.
+The proposed SOMO-VCB software implements both the single-objective and the multi-objective VCB approaches, especially designed for function approximation tasks using RBF neural networks [[5]](#5). The recently published proof-of-concept results in [[3]](#3) verify the feasibility of both approaches as well as their potential in diverse regression tasks.
 
 #### Software's guide
 ---
@@ -49,10 +49,10 @@ We acknowledge support of this work by the project “Dioni: Computing Infrastru
 ---
 <a id="1">[1]</a> Lagari, P. L., Tsoukalas, L. H., & Lagaris, I. E. (2020). Variance Counterbalancing for Stochastic Large-scale Learning. In International Journal on Artificial Intelligence Tools (Vol. 29, Issue 05, p. 2050010). World Scientific Pub Co Pte Lt. https://doi.org/10.1142/s0218213020500104
 
-<a id="2">[2]</a> Broomhead, David & Lowe, David. (1988). Radial basis functions, multi-variable functional interpolation and adaptive networks. ROYAL SIGNALS AND RADAR ESTABLISHMENT MALVERN (UNITED KINGDOM). RSRE-MEMO-4148. 
+<a id="2">[2]</a> Fletcher R. (1987). Practical methods of optimization (2nd ed.). Wiley.
 
-<a id="3">[3]</a> Fletcher R. (1987). Practical methods of optimization (2nd ed.). Wiley.
+<a id="3">[3]</a> Triantali, D. G., Parsopoulos, K. E., & Lagaris, I. E. (2023). Single-objective and multi-objective optimization for variance counterbalancing in stochastic learning. In Applied Soft Computing (Vol. 142, p. 110331). Elsevier BV. https://doi.org/10.1016/j.asoc.2023.110331
 
 <a id="4">[4]</a> C. A. C. Coello, G. T. Pulido and M. S. Lechuga, "Handling multiple objectives with particle swarm optimization," in IEEE Transactions on Evolutionary Computation, vol. 8, no. 3, pp. 256-279, June 2004, doi: 10.1109/TEVC.2004.826067.
 
-<a id="5">[5]</a> Triantali, D. G., Parsopoulos, K. E., & Lagaris, I. E. (2023). Single-objective and multi-objective optimization for variance counterbalancing in stochastic learning. In Applied Soft Computing (Vol. 142, p. 110331). Elsevier BV. https://doi.org/10.1016/j.asoc.2023.110331
+<a id="5">[5]</a> Broomhead, David & Lowe, David. (1988). Radial basis functions, multi-variable functional interpolation and adaptive networks. ROYAL SIGNALS AND RADAR ESTABLISHMENT MALVERN (UNITED KINGDOM). RSRE-MEMO-4148. 
