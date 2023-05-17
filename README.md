@@ -14,24 +14,26 @@
 
 #### Variance counterbalancing
 ---
-Artificial neural networks are becoming increasingly important in engineering as they have proven helpful in various demanding applications. The Variance counterbalancing (VCB) method was proposed as a neural network training approach employing randomly selected mini-batches to optimize the network's parameters $w \in W$, where $W$ is an appropriate domain [[1]](#1). This method is based on the minimization of the average mean squared error $\bar{E}(w)$ of the network along with the error variance $\bar{\sigma}^2(w)$ over the mini-batches. The VCB method helps eliminate the need to reduce the size of the steps and promotes the use of efficient optimizers, making it a remedy for slow convergence in stochastic learning. 
+Artificial neural networks have been placed in a salient position among machine learning methods for solving challenging problems in science and engineering. The stochastic gradient descent (SGD) methods, which constitute the main optimization artillery for training neural networks, are often characterized by slow convergence rates, especially in large datasets. This is a consequence of considering the mean squared error (MSE) of the network over individual mini-batches randomly selected from the training dataset.
 
-The optimization problem underlying this technique can be handled as a single-objective or multi-objective. The proposed software implements both VCB approaches in function approximation tasks using RBF networks [[2]](#2).
+The VCB method was proposed [[1]](#1) as an alternative approach that employs random sets of mini-batches and concurrently minimizes the average and the variance of the network’s MSE. Thus, if $w$ is the parameter vector of the neural network (i.e., synapses weights and other possible parameters of its activation functions), then the average, $\bar{E}(w)$, and the variance, $\bar{\sigma}^2(w)$, of the network’s MSE over randomly selected sets of mini-batches are used to form the objective function for the network’s training. The main gain of this approach is the alleviation of slow convergence through the use of more efficient optimizers, such as quasi-Newton methods, as well as the enhanced generalization capability of the network.
 
-The first approach (SO) employs a penalty function $\lambda_{c}$ and the BFGS algorithm with strong Wolfe-Powell line search conditions [[3]](#3) to solve the problem:
+In its early variants, VCB followed a single-objective (SO) optimization approach [[1]](#1). Thus, the optimization problem was formulated through the penalty function:
 
 $$\min_{w \in W} \bar{F}(w,\lambda_{c}) = \bar{E}(w) + \lambda_{c}  \text{   } \bar{\sigma}^2(w),$$
 
-The second approach (MO) utilizes the inherent bi-objective form of the problem. It uses the state-of-the-art multi-objective particle swarm optimization method [[4]](#4) to optimize the vectorial objective function:
+where $λc$ stands for the penalty coefficient that needs to be properly set. The problem was solved using the BFGS algorithm with strong Wolfe-Powell line search conditions [[3]](#3). Recently, the inherent bi-objective nature of VCB has motivated a multi-objective (MO) formulation of the problem [[5]](#5) based on the minimization of the vectorial objective function:
 
 $$\bar{F}(w) = \left[ \bar{E}(w) \text{            } \text{            } \bar{\sigma}^2(w) \right]^T.$$
 
-The SOMO-VCB software has been validated by the research of Triantali et al. [[5]](#5), which demonstrated the promising performance of VCB approaches compared to the established Adam method. 
+whose Pareto optimal solutions can be detected through state-of-the-art metaheuristics, such as the multiobjective particle swarm optimization (MOPSO) method [[4]](#4).
+
+The proposed SOMO-VCB software implements both the single-objective and the multi-objective VCB approaches, especially designed for function approximation tasks using RBF neural networks [[2]](#2). The recently published proof-of-concept results in [[5]](#5) verify the feasibility of both approaches as well as their potential in diverse regression tasks.
 
 #### Software's guide
 ---
 
-The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTriantali/SOMO-VCB/tree/main/SOMO-VCB) folder. The folder contains two groups of m-files. The first group implements the single-objective approach and comprises the files with the "so" prefix. The second group implements the multi-objective strategy and contains the files with the "mo" prefix. The details of the software's files and folders are in the included [README](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/SOMO-VCB/README.pdf) file. An additional file named [Example](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/Example.pdf) is provided to make it easier for the user to understand the software through a step-by-step example.
+The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTriantali/SOMO-VCB/tree/main/SOMO-VCB) folder. The folder contains two groups of m-files. The first group implements the single-objective approach and comprises the files with the "so" prefix. The second group implements the multi-objective strategy and contains the files with the "mo" prefix. The details of the software's files and folders are in the included [README](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/SOMO-VCB/README.pdf) file. A simple application example that comprehensively describes the workings of the proposed software and can be used as a guide for applying the VCB algorithm to more complicated problems is offered on [Example](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/Example.pdf).
 
 #### Licence
 ---
