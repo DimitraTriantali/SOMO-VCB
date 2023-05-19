@@ -33,7 +33,7 @@ The proposed SOMO-VCB software implements both the single-objective and the mult
 #### Software's guide
 ---
 
-The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTriantali/SOMO-VCB/tree/main/SOMO-VCB) folder. The folder contains two groups of m-files. The first group implements the single-objective approach and comprises the files with the "so" prefix. The second group implements the multi-objective strategy and contains the files with the "mo" prefix. The details of the software's files and folders are in the included [README](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/SOMO-VCB/README.pdf) file. A simple application example that comprehensively describes the workings of the proposed software and can be used as a guide for applying the VCB algorithm to more complicated problems is offered on [Example](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/Example.pdf).
+The proposed software is placed in the [SOMO-VCB](https://github.com/DimitraTriantali/SOMO-VCB/tree/main/SOMO-VCB) folder. The details of the software's files and folders are in the included [README](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/SOMO-VCB/README.pdf) file. A simple application example that comprehensively describes the workings of the proposed software and can be used as a guide for applying the VCB algorithm to more complicated problems is offered on [Example](https://github.com/DimitraTriantali/SOMO-VCB/blob/main/Example.pdf).
 
 #### Licence
 ---
